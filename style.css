@@ -1,0 +1,52 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1rem;
+    background: white;
+}
+
+.logo {
+    position: absolute;
+    top: 0rem; /* Ajusta esto según sea necesario */
+    left: 1rem; /* Ajusta esto para mover el logo más a la izquierda */
+    height: 150px; /* Ajusta esto al tamaño de tu logo */
+    z-index: 10; /* Asegúrate de que el logo esté sobre los otros elementos si es necesario */
+}
+  
+  .container {
+    max-width: 100%; /* Asegúrate de que el contenedor tome el ancho completo */
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Altura completa de la ventana de visualización */
+  }
+  
+  .grid {
+    position: relative;
+    display: grid;
+    grid-template-columns: auto minmax(1, 1fr); /* La primera columna ocupa el espacio necesario, la segunda el restante */
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .login-section {
+    display: flex;
+    flex-direction: column; /* Organizar los hijos en una columna */
+    justify-content: center; /* Centrar verticalmente */
+    align-items: left; /* Centrar horizontalmente */
+    height: 100vh;
+    margin-left: auto; /* Margen automático a la izquierda */
+    margin-right: auto; /* Margen automático a la derecha */
+  }
+  
+  
+  .image-section {
+    background-image: url('https://images.unsplash.com/photo-1581093450021-4a7360e9a6b5');
+    background-size: cover;
+    background-position: center;
+    grid-column-start: 2; /* Inicia en la segunda columna */
+    height: 110vh;
+    width: 100%; /* Asume el ancho completo de su columna */
+  }

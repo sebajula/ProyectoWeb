@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Facultad de Ingeniería de Mar del Plata</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <main class="container">
+        <div class="grid">
+            <img src="src/logo.jpg" alt="Logo de la Facultad de Ingeniería de Mar del Plata" class="logo">
+            <section class="registro-section">
+                <hgroup>
+                    <h2>Registro</h2>
+                    <h3>Ingrese los datos para dar de alta su usuario </h3>
+                </hgroup>
+                <form class="formulario-registro">
+                    <label for="nombre">Nombre</label>
+                    <input type="nombre" id="nombre" name="nombre" placeholder="Ingrese su nombre" required>
+                    <label for="apellido">Apellido</label>
+                    <input type="apellido" id="apellido" name="apellido" placeholder="ingrese su apellido" required>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+                    <label for="password">Contraseña</label>
+                    <input type="password" id="password" name="password" placeholder="Tu contraseña" required>
+                    <label for="password">Repita su contraseña</label>
+                    <input type="password" id="password" name="password" placeholder="Reingrese su contraseña" required>
+                    <button type="submit">Continuar</button>
+                <!-- <p>¿Olvidaste tu contraseña? | ¿No tienes una cuenta? <a href="#">Regístrate</a></p> -->
+            </section>
+            <div class="image-section">
+                <!-- La imagen aquí es decorativa, se puede cambiar por otra si es necesario -->
+            </div>
+        </div>
+    </main>
+</body>
+</html>

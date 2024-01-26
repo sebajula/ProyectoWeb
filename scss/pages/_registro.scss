@@ -1,0 +1,17 @@
+.registro-section {
+    display: flex;
+    flex-direction: column; /* Organizar los hijos en una columna */
+    justify-content: center; /* Centrar verticalmente */
+    align-items: left; /* Centrar horizontalmente */
+    height: 100vh;
+    margin: 0 auto;
+  }
+
+.formulario-registro{
+    input {
+        padding: 0.5rem; // Reduced padding, adjust as necessary
+        width: 200%; // Adjust this to set a specific width if needed, such as width: 100%;
+        max-width: 300px; // Sets a maximum width for the inputs, adjust as necessary
+        margin-bottom: 0.5rem; // Adds space between the input fields
+      }
+}
