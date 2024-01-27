@@ -1,17 +1,22 @@
-.registro-section {
-    display: flex;
-    flex-direction: column; /* Organizar los hijos en una columna */
-    justify-content: center; /* Centrar verticalmente */
-    align-items: left; /* Centrar horizontalmente */
-    height: 100vh;
-    margin: 0 auto;
-  }
+.gridFormulario {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 
-.formulario-registro{
-    input {
-        padding: 0.5rem; // Reduced padding, adjust as necessary
-        width: 200%; // Adjust this to set a specific width if needed, such as width: 100%;
-        max-width: 300px; // Sets a maximum width for the inputs, adjust as necessary
-        margin-bottom: 0.5rem; // Adds space between the input fields
+  .gridFormulario__formulario {
+    display: flex;
+
+    .registro-section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: left;
+      height: 100vh;
+      margin: 0 auto;
+
+      .formulario-registro {
+        display: flex;
+        flex-direction: column;
       }
+    }
+  }
 }

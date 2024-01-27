@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: $blanco;
+
+    h1,
+    h2,
+    h3,
+    p,
+    label {
+        color: $negro;
+    }
+}
+
+input {
+    background-color: $blanco;
+}

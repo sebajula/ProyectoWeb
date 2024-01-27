@@ -1,4 +1,18 @@
 @charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff; }
+  * h1,
+  * h2,
+  * h3,
+  * p,
+  * label {
+    color: #000000; }
+
+input {
+  background-color: #ffffff; }
+
 header {
   display: flex;
   align-items: center;
@@ -56,19 +70,18 @@ header {
   width: 100%;
   /* Asume el ancho completo de su columna */ }
 
-.registro-section {
-  display: flex;
-  flex-direction: column;
-  /* Organizar los hijos en una columna */
-  justify-content: center;
-  /* Centrar verticalmente */
-  align-items: left;
-  /* Centrar horizontalmente */
-  height: 100vh;
-  margin: 0 auto; }
-
-.formulario-registro input {
-  padding: 0.5rem;
-  width: 200%;
-  max-width: 300px;
-  margin-bottom: 0.5rem; }
+.gridFormulario {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); }
+  .gridFormulario .gridFormulario__formulario {
+    display: flex; }
+    .gridFormulario .gridFormulario__formulario .registro-section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: left;
+      height: 100vh;
+      margin: 0 auto; }
+      .gridFormulario .gridFormulario__formulario .registro-section .formulario-registro {
+        display: flex;
+        flex-direction: column; }
