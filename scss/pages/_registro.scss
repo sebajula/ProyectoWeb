@@ -4,20 +4,19 @@
 
   .gridFormulario__formulario {
     display: flex;
-  }
 
-  .registro-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: left;
-    height: 100vh;
-    margin: 0 auto;
-    background-color: $fondo;
-
-    .formulario-registro {
+    .registro-section {
       display: flex;
       flex-direction: column;
+      justify-content: center;
+      align-items: left;
+      height: 100vh;
+      margin: 0 auto;
+
+      .formulario-registro {
+        display: flex;
+        flex-direction: column;
+      }
     }
   }
 }

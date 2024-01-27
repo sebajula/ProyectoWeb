@@ -65,14 +65,13 @@ header {
   grid-template-columns: repeat(2, 1fr); }
   .gridFormulario .gridFormulario__formulario {
     display: flex; }
-  .gridFormulario .registro-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: left;
-    height: 100vh;
-    margin: 0 auto;
-    background-color: #11191F; }
-    .gridFormulario .registro-section .formulario-registro {
+    .gridFormulario .gridFormulario__formulario .registro-section {
       display: flex;
-      flex-direction: column; }
+      flex-direction: column;
+      justify-content: center;
+      align-items: left;
+      height: 100vh;
+      margin: 0 auto; }
+      .gridFormulario .gridFormulario__formulario .registro-section .formulario-registro {
+        display: flex;
+        flex-direction: column; }
