@@ -1,7 +1,17 @@
 @charset "UTF-8";
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  background-color: #ffffff; }
+  * h1,
+  * h2,
+  * h3,
+  * p,
+  * label {
+    color: #000000; }
+
+input {
+  background-color: #ffffff; }
 
 header {
   display: flex;
